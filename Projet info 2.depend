@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1459775572 source:c:\users\baptiste\documents\fichiers ece\code blocks\projet info 2\main.cpp
+	"Game.h"
+
+1459775214 c:\users\baptiste\documents\fichiers ece\code blocks\projet info 2\main.h
+	<allegro.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<winalleg.h>
+	<math.h>
+	<time.h>
+
+1459775214 source:c:\users\baptiste\documents\fichiers ece\code blocks\projet info 2\game.c
+	"Game.h"
+
+1459775214 c:\users\baptiste\documents\fichiers ece\code blocks\projet info 2\game.h
+	"main.h"
+
+1459775596 source:c:\users\baptiste\documents\fichiers ece\code blocks\projet info 2\game.cpp
+	"Game.h"
+
