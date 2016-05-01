@@ -7,20 +7,21 @@
 #include <time.h>
 #define ECRAN_L 1000
 #define ECRAN_H 700
-#define NB_SPRITE 27
-#define NB_SPRITE_ENVIRONNEMENT 2
-#define NB_SPRITE_BASIC 7
-#define NB_SPRITE_ROACH 13
-#define NB_SPRITE_AIGUILLE 23
-#define NB_SPRITE_SOUFFLE 27
-#define NB_CAT 5
+#define NB_SPRITE 34
+#define NB_SPRITE_ENVIRONNEMENT 8
+#define NB_SPRITE_BASIC 12
+#define NB_SPRITE_ROACH 18
+#define NB_SPRITE_AIGUILLE 28
+#define NB_SPRITE_SOUFFLE 32
+#define NB_SPRITE_NYDUS 34
+#define NYDUS_POS 5
+#define NB_CAT 6
 #define STAIRS_POS 1
 #define SOUFFLE_POS 4
 #define SCROLL_POS 2
 #define BASIC_POS 0
 #define PLAYER_SPEED 10
-#define JUMP_POS 3
-#define NB_METIER 5
+#define NB_METIER 7
 #define AIGUILLE_POS 3
 
 
@@ -43,7 +44,8 @@ typedef struct souffle
 {
     int x1,y1,x2,y2;
     int angle;
-    int dx,dy;
+    float dx;
+    float dy;
     t_chainB* img;
     int img_nb;
     struct souffle* next;
@@ -54,7 +56,8 @@ typedef struct player
     t_chainB* actuel;
     int metier_on;
     float image_refresh;
-    int x,y;
+    float x;
+    float y;
     int dx, dy;
     int metier;
     int img_nb;
